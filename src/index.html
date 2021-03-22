@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Image search API</title>
   </head>
 
   <body>
-   
+    <div class="form">
+        <form class="search-form" id="search-form">
+          <div class="group">
+            <input type="text" name="query" autocomplete="off" required>
+            <span class="bar"></span>
+            <label for="">Search image</label>
+          </div>
+        </form>
+        
+    </div>
+    <div>
+        <ul class="gallery">
+        <!-- Список <li> с карточками изображений -->
+        </ul>
+        <div class="loader isHidden">Loading</div>
+    </div>
+
+   <script>AOS.init()</script>
   </body>
 </html>
