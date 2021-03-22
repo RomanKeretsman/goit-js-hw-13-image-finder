@@ -32,7 +32,6 @@ form.addEventListener('input', debounce(event => {
     NewPixabay.resetPage();
     NewPixabay.query = event.target.value;
     if (NewPixabay.query === '') emptyNotification();
-    // hideArrow();
     showLoading();
     setTimeout(addDataToDOM, 2000);
   }, 1000),
